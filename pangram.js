@@ -1,6 +1,5 @@
 
 export const isPangram = (string) => {
-  if (string === '') return false
-  const regex = new RegExp(/[a-z ]\w+/, 'g');
+  const regex = new RegExp(/[a-z ]+\D/, 'g');
   return regex.test(string)
 };
